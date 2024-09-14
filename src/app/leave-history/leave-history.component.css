@@ -1,8 +1,68 @@
-h1 {
-    color: #28a745;
-  }
-  
-  ul {
-    margin: 20px;
-  }
-  
+body {
+  background-color: #c0c0c0; /* Silver background color */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.navbar {
+  background-color: #4B79A1;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .user-info {
+  display: flex;
+  align-items: center;
+}
+.navbar .user-info .bi-person-circle {
+  font-size: 30px;
+  margin-right: 10px;
+}
+.navbar .user-info span {
+  margin-right: 20px;
+}
+.container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.card {
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+}
+.card-header {
+  background-color: #86A8E7;
+  color: #f0f0f0; /* Lighter color for the heading */
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 10px 10px 0 0;
+  padding: 15px;
+}
+.table th, .table td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+.table th {
+  background-color: #b7b7e3;
+  color: white;
+}
+.logout-btn {
+  color: white;
+  background-color: #FF6B6B;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: none;
+  transition: background 0.3s ease;
+}
+.logout-btn:hover {
+  background-color: #E74C3C;
+}

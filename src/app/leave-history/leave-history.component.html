@@ -1,6 +1,49 @@
-<h1>Leave History</h1>
-<ul>
-  <li *ngFor="let leave of leaves">
-    {{ leave.type }} - {{ leave.duration }} days - {{ leave.status }}
-  </li>
-</ul>
+<nav class="navbar">
+  <div class="logo">
+      <h3>Leave Management System</h3>
+  </div>
+  <div class="user-info">
+      <span><strong>Lokkeswaran</strong></span>
+      <i class="bi bi-person-circle"></i>
+      <button class="logout-btn">Logout</button>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container">
+  <div class="card">
+      <div class="card-header">
+          Leave History
+      </div>
+      <div class="card-body">
+          <table class="table">
+              <thead>
+                  <tr>
+                      <th>Leave Type</th>
+                      <th>Start Date</th>
+                      <th>End Date</th>
+                      <th>Number of Days</th>
+                      <th>Status</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Earned Leave (EL)</td>
+                      <td>01 Sep 2024</td>
+                      <td>05 Sep 2024</td>
+                      <td>5</td>
+                      <td>Approved</td>
+                  </tr>
+                  <tr>
+                      <td>Casual Leave (CL)</td>
+                      <td>10 Sep 2024</td>
+                      <td>12 Sep 2024</td>
+                      <td>3</td>
+                      <td>Pending</td>
+                  </tr>
+                  <!-- Add more rows as needed -->
+              </tbody>
+          </table>
+      </div>
+  </div>
+</div>
