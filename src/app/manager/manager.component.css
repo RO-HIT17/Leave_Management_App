@@ -1,0 +1,19 @@
+h1 {
+    color: #ffc107;
+  }
+  
+  table {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  thead th {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  tbody td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  

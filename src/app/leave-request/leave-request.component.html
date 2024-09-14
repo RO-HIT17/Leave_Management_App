@@ -1,0 +1,14 @@
+<h1>Leave Request</h1>
+<form (ngSubmit)="submitRequest()">
+  <label for="leave-type">Leave Type:</label>
+  <select id="leave-type">
+    <option>Sick Leave</option>
+    <option>Casual Leave</option>
+    <option>Annual Leave</option>
+  </select>
+  <br />
+  <label for="leave-duration">Duration (Days):</label>
+  <input type="number" id="leave-duration" />
+  <br />
+  <button type="submit">Submit</button>
+</form>

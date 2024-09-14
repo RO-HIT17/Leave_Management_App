@@ -1,0 +1,23 @@
+<h1>Manager Dashboard</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Employee</th>
+      <th>Leave Type</th>
+      <th>Duration</th>
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let request of requests; let i = index">
+      <td>{{ request.employee }}</td>
+      <td>{{ request.leaveType }}</td>
+      <td>{{ request.duration }} days</td>
+      <td>{{ request.status }}</td>
+      <td>
+        <button *ngIf="request.status === 'Pending'" (click)="approveRequest(i)">Approve</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
