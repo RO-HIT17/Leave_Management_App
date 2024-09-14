@@ -1,19 +1,64 @@
-h1 {
-    color: #ffc107;
-  }
-  
-  table {
-    width: 100%;
-    margin: 20px 0;
-  }
-  
-  thead th {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  tbody td {
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
-  
+body {
+  background-color: #dcdcdc; /* Light gray background */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #343a40;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .user-info {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .user-info .bi-person-circle {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.card {
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.card-header {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 10px 10px 0 0;
+  padding: 15px;
+}
+
+.form-check-input {
+  margin-right: 10px;
+}
+
+.btn-submit {
+  background-color: #bacfbf;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #7d8a80;
+}

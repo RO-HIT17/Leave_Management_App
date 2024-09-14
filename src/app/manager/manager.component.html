@@ -1,23 +1,68 @@
-<h1>Manager Dashboard</h1>
-<table>
-  <thead>
-    <tr>
-      <th>Employee</th>
-      <th>Leave Type</th>
-      <th>Duration</th>
-      <th>Status</th>
-      <th>Action</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let request of requests; let i = index">
-      <td>{{ request.employee }}</td>
-      <td>{{ request.leaveType }}</td>
-      <td>{{ request.duration }} days</td>
-      <td>{{ request.status }}</td>
-      <td>
-        <button *ngIf="request.status === 'Pending'" (click)="approveRequest(i)">Approve</button>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+      <h3>Manager Dashboard</h3>
+  </div>
+  <div class="user-info">
+      <span><strong>Manager</strong></span>
+      <i class="bi bi-person-circle"></i>
+      <button class="btn btn-danger">Logout</button>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container">
+  <div class="card">
+      <div class="card-header">
+          Employee Leave Information
+      </div>
+      <div class="card-body">
+          <form>
+              <!-- Employee Information Table -->
+              <table class="table table-bordered">
+                  <thead>
+                      <tr>
+                          <th>Select</th>
+                          <th>Employee ID</th>
+                          <th>Name</th>
+                          <th>Leave Type</th>
+                          <th>Start Date</th>
+                          <th>End Date</th>
+                          <th>No. of Days</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td><input type="checkbox" class="form-check-input"></td>
+                          <td>101</td>
+                          <td>John Doe</td>
+                          <td>Earned Leave (EL)</td>
+                          <td><input type="date" class="form-control" value="2024-09-15" readonly></td>
+                          <td><input type="date" class="form-control" value="2024-09-20" readonly></td>
+                          <td><input type="number" class="form-control" value="6" readonly></td>
+                      </tr>
+                      <tr>
+                          <td><input type="checkbox" class="form-check-input"></td>
+                          <td>102</td>
+                          <td>Jane Smith</td>
+                          <td>Casual Leave (CL)</td>
+                          <td><input type="date" class="form-control" value="2024-09-16" readonly></td>
+                          <td><input type="date" class="form-control" value="2024-09-18" readonly></td>
+                          <td><input type="number" class="form-control" value="3" readonly></td>
+                      </tr>
+                      <tr>
+                          <td><input type="checkbox" class="form-check-input"></td>
+                          <td>103</td>
+                          <td>Michael Johnson</td>
+                          <td>Earned Leave (EL)</td>
+                          <td><input type="date" class="form-control" value="2024-09-17" readonly></td>
+                          <td><input type="date" class="form-control" value="2024-09-22" readonly></td>
+                          <td><input type="number" class="form-control" value="6" readonly></td>
+                      </tr>
+                  </tbody>
+              </table>
+              <button type="submit" class="btn btn-submit">Approve</button>
+          </form>
+      </div>
+  </div>
+</div>
