@@ -5,7 +5,7 @@ import { ManagerComponent } from './manager/manager.component';
 
 export const routes: Routes = [
   { path: 'leave-request', component: LeaveRequestComponent },
-  { path: 'leave-history', component: LeaveHistoryComponent },
+  { path: 'leave-balance', component: LeaveHistoryComponent },
   { path: 'manager', component: ManagerComponent },
   { path: '', redirectTo: '/leave-request', pathMatch: 'full' }
 ];

@@ -49,7 +49,7 @@ body {
 }
 
 .btn-submit {
-  background-color: #bacfbf;
+  background-color: #5cc274;
   border: none;
   color: white;
   font-size: 1rem;
@@ -60,5 +60,19 @@ body {
 }
 
 .btn-submit:hover {
-  background-color: #7d8a80;
+  background-color: #50ba69;
+}
+.btn-submit-reject {
+  background-color: #d74141;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.btn-submit-reject:hover {
+  background-color: #e72d2d;
 }
