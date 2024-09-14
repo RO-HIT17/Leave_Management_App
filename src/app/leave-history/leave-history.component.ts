@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';  // Import CommonModule
+import { CommonModule } from '@angular/common'; 
 
 @Component({
   selector: 'app-leave-history',
-  standalone: true,  // Standalone components need this
-  imports: [CommonModule],  // Add CommonModule to imports
+  standalone: true,  
+  imports: [CommonModule],  
   templateUrl: './leave-history.component.html',
   styleUrls: ['./leave-history.component.css']
 })

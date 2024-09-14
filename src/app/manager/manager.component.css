@@ -47,7 +47,15 @@ body {
 .form-check-input {
   margin-right: 10px;
 }
-
+.table th {
+  background-color: #66666c;
+  color: white;
+}
+.table th, .table td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
 .btn-submit {
   background-color: #5cc274;
   border: none;
