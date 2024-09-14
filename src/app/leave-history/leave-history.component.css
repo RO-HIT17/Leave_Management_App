@@ -56,14 +56,4 @@ body {
   background-color: #66666c;
   color: white;
 }
-.logout-btn {
-  color: white;
-  background-color: #FF6B6B;
-  border-radius: 5px;
-  padding: 5px 10px;
-  border: none;
-  transition: background 0.3s ease;
-}
-.logout-btn:hover {
-  background-color: #E74C3C;
-}
+

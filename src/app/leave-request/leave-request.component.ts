@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-leave-request',
-  standalone: true,
-  imports: [CommonModule, FormsModule], 
+  standalone: true,  
+  imports: [CommonModule],  
   templateUrl: './leave-request.component.html',
   styleUrls: ['./leave-request.component.css']
 })
@@ -16,16 +15,21 @@ export class LeaveRequestComponent {
   endDate: string = '';
   noOfDays: number = 0;
   reason: string = '';
+  attachment: File | null = null;
 
   onSubmit() {
+    // Handle form submission
     console.log({
       employeeName: this.employeeName,
       leaveType: this.leaveType,
       startDate: this.startDate,
       endDate: this.endDate,
       noOfDays: this.noOfDays,
-      reason: this.reason
+      reason: this.reason,
+      attachment: this.attachment
     });
+
+    // You can add further code here to handle the file upload if needed
   }
 
   calculateDays() {
@@ -39,5 +43,9 @@ export class LeaveRequestComponent {
         this.noOfDays = 0;
       }
     }
+  }
+
+  onFileChange(event: any) {
+    this.attachment = event.target.files[0] || null;
   }
 }

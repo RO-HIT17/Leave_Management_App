@@ -1,17 +1,30 @@
+
 body {
-  background: linear-gradient(135deg, #7F7FD5, #86A8E7, #91EAE4);
-  height: 100vh;
+  background-color: #dcdcdc; /* Light gray background */
   margin: 0;
-  display: flex;
-  flex-direction: column;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
+
 .navbar {
-  background-color: #4B79A1;
+  background-color: #343a40;
   padding: 10px;
   color: white;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+.navbar .user-info {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .user-info .bi-person-circle {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
 .container {
   display: flex;
   flex: 1;
@@ -24,8 +37,9 @@ body {
   padding: 20px;
   width: 100%;
 }
+
 .card-header {
-  background-color: #86A8E7;
+  background-color: #343a40;
   color: white;
   text-align: center;
   font-size: 1.5rem;
@@ -36,8 +50,17 @@ body {
   border-radius: 10px;
   padding: 10px;
 }
+.table th, .table td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+.table th {
+  background-color: #66666c;
+  color: white;
+}
 .btn-submit {
-  background: linear-gradient(90deg, #7F7FD5, #86A8E7);
+  background-color: #40d33b;
   border: none;
   color: white;
   font-size: 1.2rem;
