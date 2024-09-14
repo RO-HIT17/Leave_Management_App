@@ -1,8 +1,52 @@
-h1 {
-    color: #007bff;
-  }
-  
-  form {
-    margin: 20px;
-  }
-  
+body {
+  background: linear-gradient(135deg, #7F7FD5, #86A8E7, #91EAE4);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  background-color: #4B79A1;
+  padding: 10px;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+}
+.card {
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+}
+.card-header {
+  background-color: #86A8E7;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 10px 10px 0 0;
+  padding: 15px;
+}
+.form-control {
+  border-radius: 10px;
+  padding: 10px;
+}
+.btn-submit {
+  background: linear-gradient(90deg, #7F7FD5, #86A8E7);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+}
+.leave-balance-table th, .leave-balance-table td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
