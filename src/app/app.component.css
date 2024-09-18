@@ -1,0 +1,19 @@
+
+.navbar {
+    background-color: #343a40;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .user-info .bi-person-circle {
+    font-size: 30px;
+    margin-right: 10px;
+  }
