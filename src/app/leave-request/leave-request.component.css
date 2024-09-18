@@ -54,25 +54,3 @@ body {
   padding: 10px;
   border: 1px solid #ddd;
 }
-.sidebar {
-  background-color: #4B79A1;
-  color: white;
-  width: 250px;
-  padding: 20px;
-  height: 100vh;
-  position: fixed;
-  top: 70px; /* Adjust top position to account for the fixed navbar */
-  left: 0;
-}
-.sidebar a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  transition: background-color 0.3s;
-}
-.sidebar a:hover {
-  background-color: #2a4d7f;
-}
